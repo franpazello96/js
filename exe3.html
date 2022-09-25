@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var num1 = prompt("Digite o primeiro valor").toLowerCase().trim()
+        var operacao = prompt("Digite a operacao desejada (soma, subtração ou multiplicação)").trim()
+        var num2 = prompt("Digite o segundo valor").toLowerCase().trim()
+
+
+        function calcular(num1, operacao, num2){
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            var resultado = 0
+
+            if (operacao == "soma"){
+                resultado = num1 + num2;
+            }
+            
+            if (operacao == "subtracao"){
+                resultado = num1 - num2;
+            }
+
+            if (operacao == "multiplicacao"){
+                resultado = num1 * num2;
+            }
+        }
+
+        document.write(" O resultado da operação é:" + calcular(num1, operacao, num2));
+</script>
+</head>
+<body>
+    
+</body>
+</html>

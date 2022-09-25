@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>funcao</title>
+        <script>
+            /*uma funcao tem o objetivo de encapsular um bloco de 
+            codigo com o objetivo bem definido e atraves das chamadas das funcoes 
+            podemos recuperar as chamadas
+            
+            function nomeDaFuncao (parametros, argumentos){
+                var variavel = calculo * calculo
+                return variavel 
+
+            void - nao fornece nenhum tipo de retorno para quem fez o tipo de chamada 
+            retorno -  retorna um parametro para quem fez a chamada e pode ser reutilizado dentro do cod 
+
+            }*/
+
+          /* function calcularAreaTerreno(largura, comprimento){
+                var area = largura * comprimento 
+                return area 
+           }
+
+           var largura = prompt("Digite a largura do terreno em Metros")
+           var comprimento = prompt("Digite o comprimento do terreno")
+
+           largura = parseFloat(largura)
+           comprimento = parseFloat(comprimento)
+
+           var area = calcularAreaTerreno(largura, comprimento)
+
+           document.write(area) */
+
+           // flex
+
+           function soma (a, b, c, d){
+            return a + b + c + d
+           }
+
+           function soma(a,b){
+            b = b === undefined ? 0 : b
+            return a + b            
+        }
+
+           console.log(soma(7,7))
+           console.log(soma(7,7,9,15)) // desconsidera os parametros adicionais 
+
+           // 3 escopos: global, funcao e o bloco 
+
+            var serie = "friends"
+           
+            if (true){
+                document.write(serie)
+            }
+
+            document.write("<br/>")
+
+            function x(){
+                document.write(serie)
+            }
+
+            x()
+
+            // escopo de bloco 
+             
+            if (true){
+                document.write(serie)
+            }
+
+            document.write("<br/>")
+
+            function x(){
+                document.write(serie)
+            }
+
+            x()
+
+            // 
+
+
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html> 
+ 

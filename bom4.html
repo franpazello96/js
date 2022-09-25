@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <script>
+
+        /*
+        browser object model 
+        executa acao uma vez apos o tempo informado 
+        setTimeout(<acao>, <tempo em milisegundos>);
+        clearTimeout()
+        
+        sempre executa a acao apos o periodo informado 
+        setInterval(<acao>, <tempo em milisegundos>);
+        clearInterval()
+        */
+        //setTimeout(function(){document.write( 'teste')}, 2000)
+      var i = 5 
+      var x =  setInterval(function(){document.write(i); 
+            i--
+            if(i===0){
+               // window.location.reload()
+               clearInterval(x)
+            }
+        }, 1000)
+        </script>
+</head>
+<body>
+</body>
+</html>

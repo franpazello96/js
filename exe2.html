@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 2</title>
+        <script>
+
+            var nome = prompt("Digite seu nome")
+            var altura = prompt("Digite sua altura")
+            var peso = prompt("Digite seu peso")
+            
+            altura = parseFloat(altura)
+            peso = parseFloat (peso)
+
+            //conversao de cm para m divisao por 100 
+
+            altura /= 100
+
+            var m = peso / (altura ** 2)
+            var classificado
+
+            if (m < 16){
+                classificado = "Baixo peso muito grave"
+            } else if (m >= 16 && m <= 16.99){
+                classificado = "Baixo peso grave "
+            }else if (m >= 17 && m <= 18.49){
+                classificado = "Baixo peso"
+            }else if (m >= 18.50 && m <= 24.99){
+                classificado = "Peso normal"
+            }else if (m >= 25 && m<= 29.99){
+                classificado = "Sobrepeso"
+            }else if (m >=30 && m <= 34.99){
+                classificado = "Obesidade grau I"
+            }else if (m >= 35 && m <= 39.99){
+                classificado = "Obesidade grau II"
+            }else{
+                classificado = "Obesidade grau III "
+            }
+
+            document.write(nome + "possui índice de massa corporal igual a" + m + ", sendo classificado como" + classificado)
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html> 

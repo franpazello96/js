@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>operadores</title>
+        <script>
+            /*if (2 == 2 || 3 >= 1 || 'a' == 'b'){
+                document.write("Verdadeiro")
+            } else{
+                document.write("falso")
+            }*/
+
+            var nota = prompt("Digite a nota")
+            var falta = prompt("Digite a quant faltas")
+
+            var media = 75
+            var totalFaltas = 15
+
+
+            if (nota >= media && falta <= totalFaltas){
+                document.write("Voce passou")
+            }else{
+                document.write("Voce reprovou")
+            }
+
+            var resultado = ( nota >= media && falta <= totalFaltas) ? "Aprovado" : "Reprovado"
+            document.write(resultado)
+        </script>
+    </head>
+    <body>
+    </body>
+</html> 
+ 

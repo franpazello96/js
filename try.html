@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        /*
+        try - tente 
+        catch - pegar 
+        finally - finalmente 
+        throw - geralmente utilizado no catch - lancar a excecao
+        */
+
+        //netflix 
+        
+        var video = Array()
+        video[1] = Array()
+        video[1]['nome'] = 'filme'
+        video[1]['categoria'] = 'anime'
+
+        function getVideo(video){
+            //logica 
+            //http 
+
+
+            try{
+                console.log(video[0]['nome'])
+            } 
+            
+            catch(erro){
+                trataErro(erro)
+                 console.log(' agora sim podemos tratar esse erro ')
+                 throw new Error('houve um erro mas nao se preocupe estamos trabalhando nisso')
+
+            } 
+
+            finally{
+                console.log(' sempre passa por aqui try/catch  ')
+            }
+           
+        }
+
+        function trataErro(erro){
+            console.log(erro)
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

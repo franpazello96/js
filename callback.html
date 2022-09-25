@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>funcao</title>
+        <script>
+            /*
+            funcao encaminhadas como parametros para outras 
+            funcoes 
+
+            apos a finalizacao da funcao ter condicao de 
+            chamar a funcao por parametro 
+            dando a continuidade no processamento 
+            da logica da aplicacao 
+
+            */
+
+            function exibirArtigo(id, sucesso, erro){
+            // logica recuperar o id via requisicao http 
+                if (true){
+                    sucesso("Funcoes de callback em js", "Funcoes de callback")
+                }else{
+                    erro("Erro ao recuperar os dados")
+                }
+            }
+             var sucesso = function (titulo, descricao){
+                document.write("<h1>" + titulo + "</h1>")
+             }
+
+             var erro = function(){}
+             	
+            exibirArtigo(1, erro,sucesso)
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html> 
+ 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foreach</title>
+    <script>
+
+        //semelhante ao for in 
+        var listaFuncionario = ['viviane', 'rosangela', 'miguel', 'fernanda', 'lucas']
+        
+        //podemos encapsular funcoes 
+        var f = function (valor, indice){
+            console.log(valor, indice)
+        }
+        console.log()
+        //listaFuncionario.forEach(callback) 
+        listaFuncionario.forEach(function(valor, indice, array){
+            // logica 
+            console.log('indice' + indice + 'valor' + valor)
+            console.log(array)
+
+            if(valor == 'lucas'){
+                array[indice] = 'novo'
+            }
+        })
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

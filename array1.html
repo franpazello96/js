@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inlcuir e Remover</title>
+    <script>
+        var listaFrutas = Array()
+
+        listaFrutas['frutas'] = Array()
+        listaFrutas['pessoas'] = Array()
+
+        listaFrutas[0] = 'banana'
+        listaFrutas[1] = 'maça'
+
+        //incluir o elemento no final do array 
+        listaFrutas.push('uva')
+        listaFrutas['frutas'].push('banana')
+        //incluir o elemento no inicio do array 
+        listaFrutas.unshift('morango')
+        //excluir o elemento do final pop
+        listaFrutas.pop()
+        //excluir o elemento do inicio shift
+        listaFrutas.shift()
+        //pesquisar elementos dentro do arraay 
+        listaFrutas.indexOf('morango')
+       // console.log(listaFrutas.indexOf('morango'))
+
+        var auxiliar = listaFrutas.indexOf('uva')
+
+        if ( auxiliar === -1){
+           // console.log('elemento não existe')
+        }else{
+           // console.log('elemento existe e esta na posicao')
+        }
+
+        /*ordenacao de arrays */
+
+        var listaCoisas = Array()
+
+        listaCoisas[0] = 'maca'
+        listaCoisas[1] = 'uva'
+        listaCoisas[2] = 'banana'
+        listaCoisas[3] = 'salada'
+        // sort reordenacao alfanumerica 
+        console.log(listaCoisas.sort())
+        // ordem numerica 
+        console.log(listaCoisas.sort(ordenaNumeros))
+
+        function ordenaNumeros(a, b){
+            return a - b
+
+            // < 0 = a ordenado antes de b 
+            // > 0 = b ordenado antes de a 
+            // == a ordem é mantida 
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

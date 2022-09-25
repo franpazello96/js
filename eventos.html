@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>evento</title>
+    <script>
+
+        /*
+        onclick - acionado quando o elemento é clicado
+        ondblclick - acionado quando o elemento é clicado 2x 
+        onmouseup - acionado sobre o clique sobre determinado elemento é liberado 
+        onmouseover - acionado quando o cursor do mause sobrepoe o elemento 
+        onmouseout - acionado quando o cursor do mouse sai da regiao ocupada pelo elemento 
+        
+        acoes apartir do teclado
+        onkeydown - tecla é pressionada 
+        onkeypress - momento em que a tecla é pressionada somente quando a recla pressionada representa um caractere 
+        onkeyup - momento em que a tecla é liberada 
+        
+
+
+        */
+
+        function acao(){
+            alert('evento disparado')
+        }
+
+        function acao2(){
+            alert('evento 2 disparado')
+        }
+
+    </script>
+</head>
+<body>
+
+    <div onclick = "acao()"  onmouseout= "acao2()"style="background: #ccc; height: 150px; width: 150px;"></div>
+    <hr>
+    <div ondblclick = "acao()" style="background: #ccc; height: 150px; width: 150px;"></div>
+    <hr>
+    <div onmouseup = "acao()" style="background: #ccc; height: 150px; width: 150px;"></div>
+    <hr>
+    <div onmouseover = "acao()" style="background: #ccc; height: 150px; width: 150px;"></div>
+    <hr>
+    <div onmouseout = "acao()" style="background: #ccc; height: 150px; width: 150px;"></div>
+    
+    <h1>Evento Teclado </h1>
+    <hr>
+    <input onkeydown="acao2()" type="text">
+
+    <hr>
+    <input onkeyup="acao2()" type="text">
+
+    <hr>
+    <input onkeypress="acao2()" type="text">
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*
+        onfocus - ele é acionado quando o elemento recebe o foco do
+        cursor do mouse 
+        onblur - é acionado quando o elemento perde o foco 
+        on change - quando o estado do elemento é modificado - muito 
+        comum para elementos do tipo select 
+        */
+    </script>
+</head>
+<body>
+    <input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')"type="text">
+    <select  onchange="console.log('estado foi alterado')">
+        <option>Selecione</option>
+        <option value="1">Selecione 1 </option>
+        <option value="2">Selecione 2 </option>
+    </select>
+</body>
+</html>

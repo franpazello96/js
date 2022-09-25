@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function modificarAmarelo(){
+            document.getElementById('meuId').style.backgroundColor = 'yellow'
+        }
+
+        function perdeEstilo(){
+
+            var caracter = document.getElementById('meuId').value 
+
+            if (caracter.length < 3){
+                document.getElementById('meuId').style.backgroundColor = 'blue'
+                console.log('azil')
+            } else {
+                document.getElementById('meuId').style.backgroundColor = 'red'
+            } 
+
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="digite aqui" id="meuId" name="meuNome" onfocus="modificarAmarelo()" onblur="perdeEstilo()">
+</body>
+</html>
